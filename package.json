@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:e2e": "cucumber-js --require cucumber.conf.js --require steps/*.js --format @cucumber/pretty-formatter"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bettertester21/PlaywrightBDDOne.git"
@@ -20,5 +22,8 @@
     "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.1"
   }
 }
